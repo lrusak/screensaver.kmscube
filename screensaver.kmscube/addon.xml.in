@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="screensaver.kmscube"
+  version="1.0.0"
+  name="kmscube"
+  provider-name="lrusak">
+  <requires>@ADDON_DEPENDS@</requires>
+  <extension
+    point="xbmc.ui.screensaver"
+    library_@PLATFORM@="@LIBRARY_FILENAME@"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>kmscube screensaver</summary>
+    <description>kmscube screensaver</description>
+    <platform>@PLATFORM@</platform>
+  </extension>
+</addon>
