@@ -9,9 +9,10 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 
 find_package(Kodi REQUIRED)
 find_package(OpenGLES2 REQUIRED)
+find_package(LibDRM REQUIRED)
 set(DEPLIBS ${OPENGLES2_LIBRARIES})
 
-include_directories(${KODI_INCLUDE_DIR}/.. /usr/include/drm) # Hack way with "/..", need bigger Kodi cmake rework to match right include ways
+include_directories(${LIBDRM_INCLUDE_DIRS})
 
 set(KMSCUBE_SOURCES cube-smooth.c
                     common.c
